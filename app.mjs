@@ -29,5 +29,5 @@ app.use((req, res) => {
 })
 
 app.listen(process.env.PORT || 5000 , () => {
-    console.log('success', success)
+    console.log('success')
 })
