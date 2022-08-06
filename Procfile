@@ -1,1 +1,1 @@
-worker:node app.mjs
+web: npm start
