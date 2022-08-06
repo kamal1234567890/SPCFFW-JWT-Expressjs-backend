@@ -1,0 +1,103 @@
+###
+GET http://localhost:5000/patient
+
+###
+GET http://localhost:5000/patient/62ecca0408e189e528893276
+
+###
+POST http://localhost:5000/patient/testing
+Content-Type: application/json
+
+{
+    "nilai": 0.3,
+    "idUser": "62e5f183f1aaa07e782c5ba6"
+}
+
+###
+POST http://localhost:5000/patient
+Content-Type: application/json
+
+{
+    "idUser": "62ecca0408e189e528893276",
+    "konsultasi": 
+    [
+        {   
+            "namaPenyakit": "asam urat",
+            "dataCF": [
+                {
+                    "idGejala": "62dea5d465d50a16b7cb21ae",
+                    "CFUser": -2
+                },
+                {
+                    "idGejala": "62dea5d465d50a16b7cb21af",
+                    "CFUser": 0.4
+                },
+                {
+                    "idGejala": "62dea5d465d50a16b7cb21b0",
+                    "CFUser": 0
+                },
+                {
+                    "idGejala": "62dea5d465d50a16b7cb21b1",
+                    "CFUser": 0.2
+                },
+                {
+                    "idGejala": "62dea5d465d50a16b7cb21b2",
+                    "CFUser": 0.2
+                }
+            ]
+        }
+    ]
+}
+
+###
+POST http://localhost:5000/patients
+Content-Type: application/json
+
+[
+    {
+        "idUser": "62ecca0408e189e528893276",
+        "namaPenyakit": "asam urat",
+        "dataCF": [
+                {
+                    "idGejala": "62dea5d465d50a16b7cb21ae",
+                    "CFUser": 0.2
+                },
+                {
+                    "idGejala": "62dea5d465d50a16b7cb21af",
+                    "CFUser": 0.4
+                },
+                {
+                    "idGejala": "62dea5d465d50a16b7cb21b0",
+                    "CFUser": 0
+                },
+                {
+                    "idGejala": "62dea5d465d50a16b7cb21b1",
+                    "CFUser": 0.2
+                },
+                {
+                    "idGejala": "62dea5d465d50a16b7cb21b2",
+                    "CFUser": 0.2
+                }
+        ]
+    }
+]
+
+###
+POST http://localhost:5000/patients
+Content-Type: application/json
+
+[
+    {   
+        "idUser": "",
+        "namaPenyakit": "",
+        "dataCF": [
+                {
+                    "idGejala": "62dea5d465d50a16b7cb21ae",
+                    "CFUser": ""
+                }
+        ]
+    }
+]
+
+###
+DELETE http://localhost:5000/patient/62edf354e92c95f7c6412871

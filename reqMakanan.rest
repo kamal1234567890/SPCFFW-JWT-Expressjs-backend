@@ -1,0 +1,45 @@
+###
+POST http://localhost:5000/makanan
+Content-Type: application/json
+
+{
+    "nama": "merah",
+    "penyakit": "asam urat",
+    "status": "Larangan"
+}
+
+###
+GET http://localhost:5000/makanan?page=5&limit=20
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmQ3ZWVmMDdkM2YwZjgzZDgxMjgwZmEiLCJmdWxsTmFtZSI6IkxhIE9kZSBLYW1hbHVkZGluIiwiZGF0ZUJpcnRoIjoiMjAyMi0wNy0wOCIsImVtYWlsIjoia2FtYWx1ZGRpbjE2MjNAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjU4MzYzMzk2LCJleHAiOjE2NTgzNjM0MTZ9.o3EVZF1wJbU4M9LrJuvAtJlRIuhIYkkdq5ubkvdJVtQ
+
+###
+DELETE http://localhost:5000/makanan/62db55a7d0e790a8c32f23f4
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQ3ZWVmMDdkM2YwZjgzZDgxMjgwZmEiLCJmdWxsTmFtZSI6IkxhIE9kZSBLYW1hbHVkZGluIiwiZGF0ZUJpcnRoIjoiMjAyMi0wNy0wOCIsImVtYWlsIjoia2FtYWx1ZGRpbjE2MjNAZ21haWwuY29tIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjU4MzY0OTM4LCJleHAiOjE2NTgzNjQ5NTN9.eU5zMeWExnfTeC9pjRWeyuAyECBozTl86BrrliCBZbY
+
+###
+GET http://localhost:5000/makanan/62da060180e3fae9f8207c83
+
+###
+PATCH http://localhost:5000/makanan/62dd05860419c74c88206585
+Content-Type: application/json
+
+{
+    "nama": "telur dadar",
+    "penyakit": "asma",
+    "status": "larangan",
+    "deskripsi": "makanan larangan"
+}
+
+###
+POST http://localhost:5000/makanans?status=rekomendasi
+Content-Type: application/json
+
+[
+    {"penyakit": "coba 1"},
+    {"penyakit": "coba 4"},
+    {"penyakit": "coba 2"}
+]
+
+###
+GET http://localhost:5000/makanans
+

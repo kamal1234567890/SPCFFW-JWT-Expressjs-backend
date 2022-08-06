@@ -1,0 +1,36 @@
+###
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQyYjlkNmU1N2U2ZmFhN2IxODc5YTIiLCJmdWxsTmFtZSI6IldhaXMiLCJkYXRlQmlydGgiOiIyMS8wNi8yMDAwIiwiZW1haWwiOiJ3YWlzQGdtYWlsLmNvbSIsImlhdCI6MTY1ODE5OTkxNCwiZXhwIjoxNjU4MTk5OTI5fQ.4_fqtvvu1sU6RAXvrcWaaEgcASgNkD47Q6dEWb-pdN0
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "fullName": "La Ode Kamaluddin", 
+    "dateBirth": "23/03/2000", 
+    "email": "kamaluddin@gmail.com", 
+    "password": "123", 
+    "confPassword": "1233"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "kamaluddin1623@gmail.com",
+    "password": "123"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE  http://localhost:5000/logout
+
+
+
+
+
+

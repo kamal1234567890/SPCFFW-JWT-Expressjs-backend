@@ -1,0 +1,52 @@
+###
+GET http://localhost:5000/penyakit?select=namaPenyakit deskripsi
+
+###
+GET http://localhost:5000/penyakit/62e01712009b60edf702b49c
+
+
+###
+POST http://localhost:5000/penyakit
+Content-Type: application/json
+
+{
+    "namaPenyakit": "coba 3",
+    "deskripsi": "makanan larangan"
+}
+
+###
+POST http://localhost:5000/gejala/62e0171f009b60edf702b4a0
+Content-Type: application/json
+
+{
+    "gejala": "Gejala 2",
+    "role": 1
+}
+
+###
+DELETE http://localhost:5000/penyakit/62dfbfea810526ecf50730f5
+
+###
+DELETE http://localhost:5000/gejala/62dfbfb0e0da005043d20e78
+
+###
+PATCH http://localhost:5000/gejala/62e02bd5f5843b3b4efab934
+Content-Type: application/json
+
+{
+    "gejala": "gejala 1",
+    "role": 1
+}
+
+###
+PATCH http://localhost:5000/penyakit/62e0171f009b60edf702b4a0
+Content-Type: application/json
+
+{
+    "namaPenyakit": "coba 4",
+    "deskripsi": "makanan rekomendasi"
+}
+
+###
+GET http://localhost:5000/bobot?select=user
+
