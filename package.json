@@ -2,7 +2,7 @@
   "name": "sistempakarmakanan",
   "version": "1.0.0",
   "engines": {
-    "node": "12.11.1"
+    "node": "16.15.1"
     },
   "description": "",
   "main": "app.mjs",
