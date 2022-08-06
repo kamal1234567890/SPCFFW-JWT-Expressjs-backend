@@ -1,10 +1,10 @@
 import express from 'express'
-import dotenv from 'dotenv'
+// import dotenv from 'dotenv'
 import cookieParser from 'cookie-parser'
 import cors from 'cors'
 import { MakananRoute, UsersRoute, PenyakitRoute, PatientRoute } from './routes/index.mjs'
 import { getBobotUser } from './controllers/BobotController.mjs'
-dotenv.config()
+// dotenv.config()
 import * as databases from './utils/databases.mjs'
 
 const app = express()
